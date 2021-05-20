@@ -1,0 +1,24 @@
+.container {
+    width:80%;
+    display:flex;
+    margin:0 auto;
+    margin-top: 5rem;
+    /* border:solid black 0.1em; */
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.container>* {
+    border-radius: 0.2em;
+    width: 250px;
+    height: 400px;
+    margin: 0.5em;
+    border: solid grey 1px;
+}
+
+.card {
+    text-align: center;
+    padding: 1em;
+}
