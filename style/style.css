@@ -1,6 +1,6 @@
 body {
-    /* background-color: #F3F2FA; */
-    background-color: #fffdf4;
+    background-color: #F3F2FA;
+
 }
 
 .container {
@@ -8,32 +8,29 @@ body {
     display:flex;
     margin:0 auto;
     margin-top: 5em;
-    /* border:solid black 0.1em; */
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: space-between;
+    /* align-items: flex-start; */
+    align-items: stretch;
 }
 
 .container>* {
     border-radius: 0.2em;
     width: 250px;
-    height: 400px;
+    height: auto;
     margin: 0.5em;
-    border: solid #363554 1px;
 }
 
 .card {
     text-align: center;
     padding: 1em;
-    height: auto;
     background-color: #d9d7f0;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 :hover.card {
     background-color: #e7e6f6;
-    color: #7b7b91;
 }
 
 .ticker {
@@ -41,6 +38,7 @@ body {
     font-weight: 700;
     text-transform: uppercase;
     color: #151517;
+
 }
 
 .button {
@@ -61,19 +59,15 @@ body {
 }
 
 img {
-    /* border: solid black 1px; */
     max-width: 160px;
     max-height: 160px;
 }
 
 h1 {
-    /* border: solid black 1px; */
     font-family: 'Oswald', sans-serif;
     color: #363554;
 }
 
 p {
-    /* border: solid black 1px; */
     font-family: 'Roboto', sans-serif;
-    color: #3f3f47;
 }
