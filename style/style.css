@@ -3,16 +3,15 @@ body {
 }
 
 /* Pour que la navbar soit collée au bord de la page */
-* {
+/* * {
     padding: 0;
     margin: 0;
-}
+    box-sizing:border-box;
+} */
 
 /* Container de la flex navbar: tous les enfants seront flex */
 .navbar {
     display: flex;
-    padding-left: 1em;
-    padding-right: 1em;
     /* padding: 0 15px; */
     margin: 0;
     align-items: center;
@@ -20,29 +19,29 @@ body {
     /* flex-flow: row wrap; */
     background-color: #363554;
     height: 3em;
-    /* width: 100%; */
-    /* top: 0; */
-    /* left: 0; */
-    /* position: fixed; */
-    /* position: sticky; */
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
 }
 
 .navbar>* {
     display: flex;
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
+    /* border: solid white 1px; */
 }
 
 .navbar-item {
     margin: 1em;
-    color: #F3F2FA
+    color: #F3F2FA;
 }
 
 .container {
     width:100%;
     display:flex;
     margin:0 auto;
-    margin-top: 1em;
+    margin-top: 3em;
     flex-flow: row wrap;
     justify-content: space-evenly;
     /* align-items: flex-start; */
@@ -72,24 +71,33 @@ body {
     font-weight: 700;
     text-transform: uppercase;
     color: #151517;
-
 }
 
 .button {
     border-radius: 0.2em;
-    width: 5em;
+    width: 10em;
     height: 3em;
-    background-color: #F3F2FA;
+    background-color: transparent;
     color:#363554;
     font-family: 'Oswald', sans-serif;
     font-weight: 700;
     text-transform: uppercase;
-    border: solid #898999 0.1em;
+    border: transparent;
     margin: 1em;
+    letter-spacing: 0.2em;
+    background-position: center;
+    transition: background 0.8s;
 }
 
 :hover.button {
     cursor: pointer;
+    background: #d9d7f0 radial-gradient(circle, transparent 1%, #d9d7f0 1%) center/15000%;
+}
+
+.button:active {
+    background-color: #F3F2FA;
+    background-size: 100%;
+    transition: background 0s;
 }
 
 img {
