@@ -38,7 +38,7 @@ body {
 }
 
 .container {
-    width:100%;
+    width:80%;
     display:flex;
     margin:0 auto;
     margin-top: 3em;
@@ -53,6 +53,10 @@ body {
     width: 250px;
     height: auto;
     margin: 0.5em;
+}
+
+.title-container {
+    width: 100%;
 }
 
 .card {
@@ -73,6 +77,7 @@ body {
     color: #151517;
 }
 
+/* Button ripple effect */
 .button {
     border-radius: 0.2em;
     width: 10em;
@@ -108,8 +113,25 @@ img {
 h1 {
     font-family: 'Oswald', sans-serif;
     color: #363554;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Oswald', sans-serif;
+    color: #363554;
 }
 
 p {
     font-family: 'Roboto', sans-serif;
+}
+
+a {
+    font-family: 'Oswald', sans-serif;
+    font-size:small;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.2em;
+    color:#363554;
 }
